@@ -1,0 +1,661 @@
+@font-face {
+  font-family: "museo1";
+  src: url(resources/Museo\ Sans\ Cyrl\ 300.ttf);
+}
+@font-face {
+  font-family: "museo2";
+  src: url(resources/Museo\ Sans\ Cyrl\ 500.ttf);
+}
+@font-face {
+  font-family: "museo3";
+  src: url(resources/Museo\ Sans\ Cyrl\ 700.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "museo1", sans-serif;
+  overflow-x: hidden;
+  max-width: 144rem;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAV BAR SECTION /////////////////////////////////////////////////////////*/
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 2rem;
+  height: 8rem;
+  width: 100%;
+
+  margin: 0 auto;
+}
+.logo-nav {
+  display: flex;
+  gap: 3rem;
+  margin-left: 8rem;
+}
+.logo {
+  font-family: "museo3", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  color: #333333;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-item {
+  font-family: "museo3", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #333333;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.lang-button {
+  display: flex;
+  gap: 1rem;
+  margin-right: 4rem;
+}
+.lang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 8rem;
+  height: 4rem;
+  gap: 0.6rem;
+  border: 1px solid #000000;
+  border-radius: 6rem;
+  padding: 0.5rem 1.2rem;
+  margin-left: 25rem;
+  cursor: pointer;
+}
+
+.lang-text {
+  font-family: "museo3", sans-serif;
+  font-size: 1.5rem;
+  padding: 10px, 16px, 10px, 16px;
+  color: #333333;
+}
+
+.lang-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.2rem;
+}
+
+.button.sign-in {
+  width: 17rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.8rem;
+  gap: 0.1rem;
+  background: #6248ff;
+  border: none;
+  border-radius: 6rem;
+  cursor: pointer;
+  font-family: "museo2", sans-serif;
+
+  font-size: 1.4rem;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.button.sign-in:hover {
+  background: rgba(113, 129, 252, 1);
+}
+.button.sign-in:active {
+  background: rgba(53, 75, 244, 1);
+}
+.menu {
+  display: none;
+}
+/* HERO ///////////////////////////////////////////////////////////////////////////////////*/
+.hero {
+  background-color: rgba(99, 72, 255, 0.11);
+  padding: 4.8rem 0 15.4rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+  align-items: center;
+}
+.text-btn {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rem;
+}
+.text-btn h1 {
+  font-family: "museo2", sans-serif;
+  font-size: 6.4rem;
+  line-height: 7.2rem;
+  color: #333;
+  padding-bottom: 2rem;
+}
+.text-btn span {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #333;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
+}
+.text-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26rem;
+  height: 5.4rem;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  gap: 0.1rem;
+  background: #6248ff;
+  border: none;
+  border-radius: 6rem;
+  cursor: pointer;
+  font-family: "museo2", sans-serif;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 1.5rem;
+}
+
+.text-btn button:hover {
+  background: rgba(113, 129, 252, 1);
+}
+.text-btn button:active {
+  background: rgba(53, 75, 244, 1);
+}
+.stonks {
+  width: 48rem;
+  height: 51rem;
+}
+
+/* GETTING STARTED SECTION ////////////////////////////////////////////////////////////////*/
+.getting-started {
+  padding: 8rem 0 5.5rem 8rem;
+  position: relative;
+}
+.getting-started h1 {
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+  padding-bottom: 2rem;
+}
+.getting-started h2 {
+  display: inline-block;
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+
+  background-color: rgba(99, 72, 255, 0.11);
+}
+.steps {
+  margin-top: 10rem;
+  max-width: 144rem;
+  margin-right: 40rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 18rem;
+  grid-row-gap: 0px;
+  position: relative;
+}
+
+.step {
+  border: 2px solid rgba(98, 72, 255, 1);
+  border-radius: 3rem;
+  width: 48rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 3.5rem;
+}
+
+.step-number {
+  font-family: "museo2";
+  color: rgba(98, 72, 255, 1);
+  font-size: 1.5rem;
+}
+.step-title {
+  font-family: "museo3";
+  font-size: 2.4rem;
+  margin-top: 5px;
+  color: #333;
+}
+.step-description {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.dot-right {
+  width: 43rem;
+  height: 10rem;
+  position: absolute;
+  left: 48rem;
+  top: 9.5rem;
+}
+.dot-right2 {
+  width: 43rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 20.1rem;
+  left: 48rem;
+}
+.dot-left {
+  width: 43rem;
+  height: 10em;
+  position: absolute;
+  top: 29.5rem;
+
+  left: 22.7rem;
+}
+
+/* TESTIMONIALS SECTION/////////////////////////////////////////////////////////////////*/
+.testimonials {
+  padding: 8rem 0 15.4rem 8rem;
+  display: flex;
+  gap: 25rem;
+}
+.testimonials h1 {
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+  padding-bottom: 2rem;
+}
+.testimonials h2 {
+  display: inline-block;
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+  padding-right: 21rem;
+
+  background-color: rgba(99, 72, 255, 0.11);
+}
+.arrow-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.arrow-left {
+  background-color: #fff;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.arrow-right {
+  background-color: #fff;
+  border: 1px solid rgba(98, 72, 255, 1);
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.arrow-left-resp {
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.arrow-right-resp {
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgba(98, 72, 255, 1);
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.arrow-left-resp2 {
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.arrow-right-resp2 {
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgba(98, 72, 255, 1);
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.resp {
+  display: none;
+}
+.right-test {
+  position: relative;
+}
+.person {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.person-img {
+  width: 7.3rem;
+}
+.person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.person-name {
+  font-family: "museo2";
+  font-size: 1.8rem;
+  color: #333;
+}
+.person-function {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: rgba(79, 79, 79, 1);
+  margin-top: 0.5rem;
+}
+.testimonial-text {
+  position: relative;
+}
+.testimonial-text p {
+  font-family: "museo3";
+  font-size: 2.4rem;
+  margin-top: 2rem;
+  color: #333;
+}
+.pct {
+  width: 4.4rem;
+  position: absolute;
+  top: 0;
+  right: 60rem;
+}
+.page-number {
+  font-family: "museo3";
+  width: 7.2rem;
+  height: 1.8rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  color: rgba(98, 72, 255, 1);
+}
+
+/* FAQ SECTION//////////////////////// */
+.faq-section {
+  padding: 8rem 0 5.5rem 8rem;
+}
+.faq-section h1 {
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+  padding-bottom: 2rem;
+}
+.faq-section h2 {
+  display: inline-block;
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+
+  background-color: rgba(99, 72, 255, 0.11);
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.accordion-item {
+  border: 2px solid rgba(98, 72, 255, 1);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  width: 99.5rem;
+  height: 9.6rem;
+}
+
+.accordion-header {
+  padding: 3rem 3rem 1rem 3rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-header h3 span {
+  font-family: "museo2";
+  font-size: 2.4rem;
+  color: rgba(51, 51, 51, 1);
+}
+.accordion-icon {
+  font-size: 2.4rem;
+  margin-right: 1rem;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0 23.2rem 3rem 3rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: rgba(79, 79, 79, 1);
+}
+.accordion-item.active {
+  height: 100%;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+/* CONTACT US SECTION////////////////////////////////// */
+
+.contact-section {
+  padding: 8rem 0 5.5rem 8rem;
+  background-color: rgba(99, 72, 255, 0.1);
+  margin-top: 5rem;
+  height: 74rem;
+  display: flex;
+  gap: 10rem;
+}
+.contact-info h1 {
+  font-family: "museo3", sans-serif;
+  font-size: 5.6rem;
+  color: #333;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.contact-info h2 {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: rgba(79, 79, 79, 1);
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding-right: 10rem;
+}
+.contact-info h3 {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: rgba(79, 79, 79, 1);
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding-right: 5rem;
+}
+.reach {
+  font-family: "museo3";
+  font-size: 1.5rem;
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 1rem;
+}
+.reach-info {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: rgba(79, 79, 79, 1);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  padding-right: 12rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 58rem;
+  height: 47rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  border: 2px solid rgba(98, 72, 255, 1);
+  background: #fff;
+  border-radius: 2rem;
+}
+
+.name,
+.email,
+.text {
+  width: 42rem;
+  height: 4rem;
+  padding: 1rem 2rem 1rem 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 0.3rem;
+  resize: none;
+  font-family: "Montserrat";
+}
+.name-error,
+.email-error,
+.message-error {
+  align-self: flex-start;
+  padding-left: 6rem;
+}
+
+.button-send {
+  margin-top: 3rem;
+  width: 17.2rem;
+  height: 5.4rem;
+  padding: 2rem 6.4rem 2rem 6.4rem;
+  background: rgba(98, 72, 255, 1);
+  border-radius: 6rem;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "museo2";
+  cursor: pointer;
+}
+.button-send:hover {
+  background: rgba(113, 129, 252, 1);
+}
+.button-send:active {
+  background: rgba(53, 75, 244, 1);
+}
+.text {
+  height: 9rem;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  padding: 3rem 0 5.5rem 8rem;
+}
+.upfooter {
+  display: flex;
+  justify-content: space-around;
+  gap: 6rem;
+}
+.footer-info h2,
+.legal h2 {
+  font-family: "museo2";
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: rgba(51, 51, 51, 1);
+}
+.footer-info h3,
+.legal h3 {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.6rem;
+
+  color: rgba(79, 79, 79, 1);
+}
+.links {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+}
+.links a {
+  font-family: "museo2";
+  font-size: 1.5rem;
+  color: rgba(51, 51, 51, 1);
+}
+.downfooter {
+  display: flex;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+.downfooter p {
+  margin-right: 10rem;
+}
+.downfooter p,
+a {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.6rem;
+
+  color: rgba(130, 130, 130, 1);
+}
+.logo-footer {
+  font-family: "museo3", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #333333;
+  margin-right: 1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,462 @@
+/* 768 ///////////////////////////////////////////////*/
+
+@media (max-width: 48em) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    max-width: 76.8rem;
+  }
+  .logo {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .lang {
+    display: none;
+  }
+  .menu {
+    display: block;
+    width: 4rem;
+    margin-left: 1rem;
+  }
+  .hero {
+    padding: 4.8rem 0 4.8rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .text-btn {
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .text-btn span {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+  .text-btn button {
+    align-self: center;
+  }
+  .getting-started {
+    padding: 8rem 0 5.5rem 2rem;
+    position: relative;
+  }
+  .steps {
+    max-width: 76.8rem;
+    grid-column-gap: 4rem;
+  }
+  .step {
+    width: 32.9rem;
+    height: 23.3rem;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .dot-right {
+    width: 40rem;
+    height: 13rem;
+    position: absolute;
+    left: 13rem;
+    top: 9.5rem;
+    z-index: -1;
+  }
+  .dot-right2 {
+    width: 40rem;
+    height: 13rem;
+    position: absolute;
+    bottom: 23rem;
+    left: 14rem;
+    z-index: -1;
+  }
+  .dot-left {
+    width: 40rem;
+    height: 13em;
+    position: absolute;
+    top: 34rem;
+
+    left: 15rem;
+    z-index: -1;
+  }
+  .testimonials {
+    padding: 8rem 0 5.5rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .arrow-left {
+    display: none;
+  }
+  .arrow-right {
+    display: none;
+  }
+  .resp {
+    display: flex;
+    gap: 60rem;
+  }
+  .arrow-left-resp {
+    display: block;
+  }
+  .arrow-right-resp {
+    display: block;
+  }
+  .right-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .testimonial-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .pct {
+    top: -4rem;
+    right: 27rem;
+  }
+  .faq-section {
+    padding: 8rem 0 5.5rem 2rem;
+  }
+  .accordion-item {
+    width: 68.8rem;
+    height: 9.6rem;
+  }
+  .accordion-content {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+  .contact-section {
+    padding: 2rem 11rem 5.5rem 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 109rem;
+    gap: 2rem;
+  }
+  .contact-info h1 {
+    text-align: center;
+  }
+  .contact-info h2 {
+    padding-right: 0rem;
+  }
+  .contact-info h3 {
+    padding-right: 0rem;
+  }
+  .reach-info {
+    padding-right: 0rem;
+  }
+  .contact-form form {
+    margin: 0;
+    padding: 0;
+  }
+  .footer {
+    height: 97.7rem;
+    padding: 8rem 0 5.5rem 2rem;
+  }
+  .upfooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .footer-info h2,
+  .legal h2 {
+    text-align: center;
+  }
+  .footer-info h3,
+  .legal h3 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .logo-footer {
+    order: -2;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+  .links {
+    order: -1;
+    flex-direction: row;
+    gap: 4rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+  }
+  .downfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+  .downfooter p {
+    margin-right: 0rem;
+  }
+}
+
+/* 320/////////////////////////////////////////////////////// */
+@media (max-width: 20em) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    max-width: 32rem;
+  }
+
+  .nav-bar {
+    display: flex;
+
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  .logo-nav {
+    display: flex;
+    gap: 0rem;
+    margin-left: 2rem;
+  }
+  .logo {
+    display: block;
+    margin: 0;
+  }
+  .button.sign-in {
+    display: none;
+  }
+  .lang-button {
+    margin-right: 2rem;
+  }
+  .hero {
+    padding: 1rem 0 1rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .text-btn {
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 5rem;
+    text-align: start;
+    font-size: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+  }
+  .text-btn h1 {
+    padding-top: 2rem;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    padding-right: 7rem;
+  }
+  .text-btn span {
+    padding: 0;
+    margin: 0;
+    padding-right: 2rem;
+    text-align: start;
+  }
+  .text-btn button {
+    align-self: flex-start;
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .stonks {
+    width: 28rem;
+    height: 30rem;
+    padding-right: 2rem;
+  }
+  .getting-started {
+    padding: 1rem 0 1rem 0;
+    position: relative;
+  }
+
+  .getting-started h1 {
+    margin-top: 4rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    font-size: 4rem;
+  }
+  .getting-started h2 {
+    font-size: 4rem;
+    margin-left: 3rem;
+  }
+  .invisible-div {
+    display: none;
+  }
+  .dot-right,
+  .dot-right2,
+  .dot-left {
+    display: none;
+  }
+  .steps {
+    margin-top: 4rem;
+    max-width: 32rem;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+  .step {
+    width: 28rem;
+    height: 21.7rem;
+    padding-left: 2rem;
+  }
+  .testimonials {
+    padding: 1rem 0 1rem 0;
+  }
+  .testimonials h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+  }
+  .testimonials h2 {
+    font-size: 4rem;
+
+    padding: 0;
+    margin-left: 3rem;
+    background-color: rgba(99, 72, 255, 0.11);
+  }
+  .arrow-left-resp {
+    display: none;
+  }
+  .arrow-right-resp {
+    display: none;
+  }
+  .arrow-left-resp2 {
+    display: block;
+  }
+  .arrow-right-resp2 {
+    display: block;
+  }
+  .numbers {
+    display: flex;
+    gap: 8rem;
+  }
+  .page-number {
+    align-self: center;
+    justify-self: center;
+
+    padding: 0;
+    margin: 0;
+    width: 4rem;
+    height: 2rem;
+  }
+  .pct {
+    top: 2rem;
+    right: 14rem;
+  }
+  .testimonial-text p {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .faq-section {
+    padding: 1rem 0 1rem 0;
+  }
+  .accordion-item {
+    width: 28rem;
+    height: 9.2rem;
+  }
+  .faq-section h1 {
+    font-size: 4rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+  }
+  .faq-section h2 {
+    font-size: 4rem;
+    margin-left: 3rem;
+  }
+  .accordion-header {
+    padding: 0;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.8rem;
+  }
+  .accordion-icon {
+    font-size: 1.8rem;
+  }
+  .accordion-content {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .contact-section {
+    padding: 1rem 0 1rem 0;
+    height: 113rem;
+  }
+
+  .contact-info h1 {
+    text-align: start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 4rem;
+  }
+  .contact-info h2 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .contact-info h3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .reach {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .reach-info {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .contact-form form {
+    width: 28rem;
+    height: 41.5rem;
+  }
+  .name,
+  .email,
+  .text {
+    width: 24.8rem;
+    height: 4rem;
+  }
+  .text {
+    height: 9rem;
+  }
+  .name-error,
+  .email-error,
+  .message-error {
+    padding-left: 1.5rem;
+  }
+
+  .links {
+    order: -1;
+    flex-direction: column;
+    align-self: start;
+    gap: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+  }
+  .footer-info h2,
+  .legal h2 {
+    text-align: start;
+    padding-right: 3rem;
+  }
+  .footer-info h3,
+  .legal h3 {
+    padding-left: 0rem;
+    padding-right: 3rem;
+  }
+}
